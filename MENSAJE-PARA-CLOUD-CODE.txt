@@ -1,0 +1,7 @@
+Continuá Nano's desde este ZIP. No empieces de cero.
+
+Primero leé HANDOFF-ANGELA.md y auditá `index-standalone.html` + `admin-standalone.html` antes de tocar archivos.
+
+La Home V1.2 y su hero grande con fuego/calor están aprobados como base. Preservá diseño, secciones, WhatsApp, mobile-first y todo lo marcado como APROBADO. No inventes precios, rendimientos, salsas, cantidades ni testimonios.
+
+Primer trabajo: QA mobile/visual y performance de la Home actual, sin cambiar el concepto aprobado. Trabajá en copia/checkpoint nuevo y reportá exactamente qué modificaste, qué verificaste y qué quedó pendiente.
