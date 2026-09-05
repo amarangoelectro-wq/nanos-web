@@ -34,6 +34,7 @@
     .btn-glass{background:rgba(255,255,255,.06);color:var(--cream);border-color:var(--line);backdrop-filter:blur(10px)}
     .btn-glass:hover{background:rgba(255,255,255,.11)}
     .navlinks a.active-tab{color:#fff}
+    #tabPanels{scroll-margin-top:90px}
     #tabPanels>section{display:none}
     #tabPanels>section.active{display:block;animation:tabFade .25s ease}
     @keyframes tabFade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
@@ -685,7 +686,7 @@
         navLinks.forEach(a=>a.classList.toggle('active-tab',a.getAttribute('href').slice(1)===id));
         if(scroll)panels.scrollIntoView({behavior:'smooth',block:'start'});
       }
-      navLinks.forEach(a=>a.addEventListener('click',e=>{e.preventDefault();showTab(a.getAttribute('href').slice(1),false)}));
+      navLinks.forEach(a=>a.addEventListener('click',e=>{e.preventDefault();showTab(a.getAttribute('href').slice(1),true)}));
       document.addEventListener('click',e=>{
         const a=e.target.closest('a[href^="#"]');
         if(!a||navLinks.includes(a))return;
