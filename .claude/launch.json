@@ -3,8 +3,8 @@
   "configurations": [
     {
       "name": "nanos-static",
-      "runtimeExecutable": "python",
-      "runtimeArgs": ["-m", "http.server", "8791"],
+      "runtimeExecutable": "powershell.exe",
+      "runtimeArgs": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "serve.ps1"],
       "port": 8791
     }
   ]

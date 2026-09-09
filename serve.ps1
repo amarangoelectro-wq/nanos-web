@@ -1,4 +1,4 @@
-$root = "C:\Users\Public\Documents\Nanos-Web"
+$root = $PSScriptRoot
 $port = 8791
 $listener = New-Object System.Net.HttpListener
 $listener.Prefixes.Add("http://localhost:$port/")
